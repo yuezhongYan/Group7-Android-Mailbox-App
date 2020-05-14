@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_fetchmail">
+
+    <fragment
+        android:id="@+id/navigation_fetchmail"
+        android:name="com.njit.android.emailmobileterminal.ui.fetchmailbox.FetchMailFragment"
+        android:label="@string/title_fetchemail"
+        tools:layout="@layout/fragment_fetch_mail" />
+
+    <fragment
+        android:id="@+id/navigation_sendmail"
+        android:name="com.njit.android.emailmobileterminal.ui.sendmail.SendMailFragment"
+        android:label="@string/title_sendemail"
+        tools:layout="@layout/fragment_send_mail" />
+</navigation>
